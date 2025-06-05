@@ -37,3 +37,4 @@ Configura servidores DNS seguros como:
 # Ejemplo de uso
 .\set-dns-provider.ps1 -Provider OpenDNS
 
+![Descripción de la imagen](assets/dns-change.png)
