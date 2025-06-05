@@ -1,16 +1,39 @@
-# 🔐 Windows + GitHub Security Script
+# 🔐 Windows + GitHub Security Scripts
 
-Este repositorio contiene scripts para fortalecer la seguridad de mi PC con Windows 10 y mi entorno de desarrollo con GitHub.
+Este repositorio contiene una colección de scripts PowerShell orientados a fortalecer la seguridad, optimizar el rendimiento y automatizar configuraciones en sistemas Windows, así como asegurar tu entorno de desarrollo en GitHub.
 
-## Contenido
+---
 
-- `secure-windows.ps1`
-- `windows-firewall-setup.ps1`: Aplica reglas de firewall para proteger la red local.
-- `github-secure-config.sh`: Recomendaciones para proteger tu cuenta y repos.
-- `gitleaks-scan.yml`: Acción de GitHub para escanear el repositorio en busca de secretos.
+## 📁 Estructura del Repositorio
 
-## Uso
+- `scripts/` — Scripts generales de seguridad para Windows.
+- `network/` — Configuración de red (como DNS seguros).
+- `firewall/` — Reglas personalizadas para el firewall de Windows.
+- `system/` — Limpieza, tareas programadas y optimización del sistema.
+- `.github/workflows/` — Workflows de GitHub Actions (como escaneo de secretos).
 
-Ejecutar en PowerShell como administrador:
+---
+
+## ⚙️ Scripts destacados
+
+### `scripts/secure-windows.ps1`
+
+Aplica configuraciones de seguridad básicas al sistema Windows (deshabilitar servicios innecesarios, configurar políticas, etc).
+
+### `firewall/windows-firewall-setup.ps1`
+
+Establece reglas de firewall para bloquear puertos sensibles (como SMB/445), y restringe el acceso de RDP a la red local.
+
+### `network/set-dns-provider.ps1`
+
+Configura servidores DNS seguros como:
+
+- OpenDNS
+- Cloudflare
+- Quad9
+- AdGuard
+
 ```powershell
-.\windows-firewall-setup.ps1
+# Ejemplo de uso
+.\set-dns-provider.ps1 -Provider OpenDNS
+
