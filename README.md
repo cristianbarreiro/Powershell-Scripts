@@ -36,5 +36,6 @@ Configura servidores DNS seguros como:
 ```powershell
 # Ejemplo de uso
 .\set-dns-provider.ps1 -Provider OpenDNS
+```
 
 ![Descripción de la imagen](assets/dns-change.png)
